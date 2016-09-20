@@ -41,8 +41,7 @@ def eval_statement(instr):
             var_dict[tokens[0]] = parse_rhs(tokens[1])
             return var_dict[tokens[0]]
         else:
-            raise Exception('Invalid variable name: `' + tokens[0] + '`'
-                            )
+            raise Exception('Invalid variable name: `' + tokens[0] + '`')
     elif len(tokens) == 1:
 
         # inline arithmetic
